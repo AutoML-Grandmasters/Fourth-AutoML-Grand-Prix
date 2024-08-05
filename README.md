@@ -2,12 +2,12 @@
 # [Team AutoML Grandmasters] Fourth AutoML Grand Prix Competition Write-Up
 
 
-See [here](https://www.kaggle.com/competitions/playground-series-s4e8/discussion/523656) for the detailed post competition write-up.
+See [here](https://www.kaggle.com/competitions/playground-series-s4e8/discussion/523656) for the detailed post-competition write-up.
 
-This repository additionally provides the used the code to run AutoGluon with the same settings as we did (`main.py`), the required requirements (`requirements.txt`), and
+This repository additionally provides the used code to run AutoGluon with the same settings as we did (`main.py`), the required requirements (`requirements.txt`), and
 an additional overview picture (`overview.jpg`).
 
-Furthermore, `autogluon_distributed_example.py` contains an example on how to use the prototype of AutoGluon distributed (see [here](https://github.com/LennartPurucker/autogluon/tree/distributed_autogluon) for code). 
+Furthermore, `autogluon_distributed_example.py` contains an example of how to use the AutoGluon distributed prototype (see [here](https://github.com/LennartPurucker/autogluon/tree/distributed_autogluon) for the code). 
 Likewise `ag_post_hoc_ensembler.py` contains code for building a post hoc ensemble of an AutoGluon run and additional predictions or prediction probabilities. 
 
 
@@ -23,13 +23,13 @@ To reproduce (not replicate as this is essentially impossible given different ha
 * Run the `main.py` file.
 
 To apply our Kaggle tricks, see `ag_post_hoc_ensembler.py` and adjust the input data and paths accordingly.
-We build an ensemble using all models of a default one-hour run of AutoGluon (with 192 CPUs) run and the final predictions from a four-hour run of AutoGluon (with 1000 CPUs).
+We build an ensemble using all models of a default one-hour run of AutoGluon (with 192 CPUs) and the final predictions from a four-hour run of AutoGluon (with 1000 CPUs).
 
 ## Main Contributions List
 <!--- An itemized list of your main contributions and critical elements of success. Suggestions: Contrast your proposed method with others e.g. in terms of computational or implementation complexity, parallelism, memory cost, theoretical grounding.
 -->
 * Remove categories that do not exist in test data from the train data.
-* Use log loss and early stopping metric. 
+* Use log loss as the early stopping metric. 
 * Use 16-fold cross-validation with 1-layer stacking.
 * Use a custom portfolio of models, meta-learned from TabRepo and 100 instead of 25 iterations for post hoc ensembling.
 * Building a weighted ensemble of the four-hour run and all models of the one-hour run while increasing the decimal precision of the weighted ensemble.

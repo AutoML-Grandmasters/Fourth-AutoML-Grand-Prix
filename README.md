@@ -43,4 +43,4 @@ See [here](https://www.kaggle.com/competitions/playground-series-s4e8/discussion
 
 ## Workflow Diagram
 <!--- A representative image / workflow diagram of the method to support additional description. -->
-<img alt="autogluon_overview.jpg" src="overview.jpg"/>
+![AutoGluonOverview](overview.jpg)

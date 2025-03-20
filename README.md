@@ -44,3 +44,8 @@ See [here](https://www.kaggle.com/competitions/playground-series-s4e8/discussion
 ## Workflow Diagram
 <!--- A representative image / workflow diagram of the method to support additional description. -->
 ![AutoGluonOverview](overvierw.jpg)
+
+## Affiliation Statement
+
+L.P. acknowledges funding by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under SFB 1597 (SmallData),
+grant number 499552394. 
